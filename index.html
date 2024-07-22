@@ -6,57 +6,63 @@
     <title>Multi Choice</title>
 
     <style>
+        body{
+            background-color: rgb(248, 243, 237);
+        }
+     
+
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
         li{
             list-style: none;
-            padding: 10px;
-        
-           
+            padding: 10px;  
         }
         button{
             padding: 10px;
-           
+            background-color: coral;  
         }
-       
-
-         /* span{
-            background-color: orangered;
+        input{
             padding: 10px;
-            
-        }  */
-            
-
-        .container{
-            text-align: center;
-            padding: 100px;
-            
-            
-           
-            border: 1px solid rgb(243, 149, 127) ;
-            background-color: rgb(255, 186, 171);
-            margin-top: 100px;
-            max-width: 500px;
-            margin-left: 500px;
-            
-            
+            width: 250px;
         }
        
-
-
-
-
+        .container{
+            width: 500px;
+            background-color: rgb(255, 207, 190);
+            padding:50px 30px 100px 50px;
+            margin-left: 500px;
+        }
+        button:hover{
+            background-color: rgb(255, 236, 229);
+        }
+        h2{
+            font-size: 35px;
+        }
     </style>
 </head>
 <body>
 
 
+    <h1>QUIZZ APP</h1>
+
     <div class="container">
 
-        <h1>In the design,what does CSS stand for?</h1>
+        <h2>In the design,what does CSS stand for?</h2>
         <ul>
-            <li class="n1"><button onclick="wrong1()" id="wrg1"><span>A . </span>Calculator style sheet</button></li>
-            <li class="n2"><button onclick="wrong2()" id="wrg2"><span>B .</span> Calculator style sheet</button> </li>
-            <li class="n3"><button onclick="wrong3()" id="wrg3"><span>C .</span> Calculator style sheet</button> </li>
-            <li class="n4"><button onclick="correct()" id="crt"><span>D .</span> Cascading style sheet</button> </li>
+            <li >
+                 <button onclick="wrong1()"><span>A </span></button><input type="text"  id="wrg1" value="Calculator style sheet" readonly>
+                </li>
+            <li >
+                <button onclick="wrong2()" ><span>B </span></button><input type="text"  id="wrg2" value="Calculator style sheet" readonly>
+             </li>
+            <li >
+                <button onclick="wrong3()" ><span>C </span></button><input type="text" id="wrg3" value="Calculator style shee" readonly>
+            </li>
+            <li >
+                <button onclick="correct()" ><span>D </span></button><input type="text"  id="crt" value="Cascading style sheet" readonly>
+             </li>
         </ul>
         
    
@@ -80,9 +86,6 @@
             console.log("answer4");
         }
     </script>
-
-
-
-    
+   
 </body>
 </html>
