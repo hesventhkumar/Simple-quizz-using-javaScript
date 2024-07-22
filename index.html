@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Choice</title>
+
+    <style>
+        li{
+            list-style: none;
+            padding: 10px;
+        
+           
+        }
+        button{
+            padding: 10px;
+           
+        }
+       
+
+         /* span{
+            background-color: orangered;
+            padding: 10px;
+            
+        }  */
+            
+
+        .container{
+            text-align: center;
+            padding: 100px;
+            
+            
+           
+            border: 1px solid rgb(243, 149, 127) ;
+            background-color: rgb(255, 186, 171);
+            margin-top: 100px;
+            max-width: 500px;
+            margin-left: 500px;
+            
+            
+        }
+       
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <h1>In the design,what does CSS stand for?</h1>
+        <ul>
+            <li class="n1"><button onclick="wrong1()" id="wrg1"><span>A . </span>Calculator style sheet</button></li>
+            <li class="n2"><button onclick="wrong2()" id="wrg2"><span>B .</span> Calculator style sheet</button> </li>
+            <li class="n3"><button onclick="wrong3()" id="wrg3"><span>C .</span> Calculator style sheet</button> </li>
+            <li class="n4"><button onclick="correct()" id="crt"><span>D .</span> Cascading style sheet</button> </li>
+        </ul>
+        
+   
+    </div>
+
+    <script>
+        function wrong1(){
+            let answer1 =document.getElementById('wrg1').style.backgroundColor="red";
+            console.log("answer1");
+        }
+        function wrong2(){
+            let answer2 =document.getElementById('wrg2').style.backgroundColor="red";
+            console.log("answer2");
+        }
+        function wrong3(){
+            let answer3 =document.getElementById('wrg3').style.backgroundColor="red";
+            console.log("answer3");
+        }
+        function correct(){
+            let answer4 =document.getElementById('crt').style.backgroundColor="green";
+            console.log("answer4");
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
